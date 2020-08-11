@@ -1,0 +1,11 @@
+import os                 #导入标准os库
+import time               #调用time函数
+os.system("cls")          #清除屏幕上所有的文字
+while(True):
+	print("clocking...")
+	print(time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(int(time.time()))))
+    #time strftime() 函数接收以时间元组，并返回以可读字符串表示的当地时间,time.localtime()表示本地时间
+    #%Y 四位数的年份表示，%m 月份，%d 月内中的一天
+    #%H 24小时制小时数，%M 分钟数，%S 秒
+	time.sleep(1)                               #让程序暂停执行指定的秒数
+	os.system("cls")                        #清屏
